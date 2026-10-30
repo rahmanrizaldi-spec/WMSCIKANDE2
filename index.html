@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#092b24">
+<title>KINO WMS CIKANDE2</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:#0b2925}
+.hero{position:relative;width:100%;min-height:100vh;min-height:100dvh;background:url("background-cikande2.png") center/cover no-repeat}
+.launch{position:absolute;left:42%;top:51%;width:16%;height:35%;border-radius:24px;display:block;text-decoration:none;-webkit-tap-highlight-color:transparent;transition:background .18s,box-shadow .18s}
+.launch:hover{background:rgba(35,255,160,.08);box-shadow:0 0 28px rgba(35,255,160,.22)}
+.launch:focus-visible{outline:3px solid #a7ffd3;outline-offset:4px}
+.note{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);color:rgba(255,255,255,.82);font-size:11px;text-shadow:0 1px 5px #000;white-space:nowrap}
+@media(max-width:700px){.hero{background-size:auto 100%;background-position:center}.launch{left:34%;top:49%;width:32%;height:37%;border-radius:18px}.note{font-size:10px;bottom:8px}}
+</style>
+</head>
+<body>
+<main class="hero" aria-label="Portal KINO WMS CIKANDE2">
+  <!-- Tujuan tombol belum dihubungkan karena halaman utama WMS CIKANDE2 belum tersedia. -->
+  <a class="launch" href="#" id="openWms" aria-label="Buka WMS CIKANDE2" title="Buka WMS CIKANDE2"></a>
+  <div class="note">Klik kartu WMS CIKANDE2 untuk masuk ke sistem</div>
+</main>
+<script>
+document.getElementById('openWms').addEventListener('click', function(event) {
+  event.preventDefault();
+  alert('Halaman utama WMS CIKANDE2 belum dihubungkan. Setelah halaman WMS tersedia, alamat tombol ini perlu diisi.');
+});
+</script>
+</body>
+</html>
